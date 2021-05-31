@@ -1,0 +1,540 @@
+:root{
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+    --fuenteCarruselA : 'Roboto', sans-serif;
+    
+
+    --primario: #784D3C;
+    --girs: #e1e1e1;
+    --blanco: #ffffff;
+    --negro: #000000;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /*para que 1 rem = 10px*/
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+
+
+.head{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+
+
+position: absolute;
+height: 48px;
+left: 6.67%;
+right: 6.67%;
+top: 48px;
+    
+}  
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px;
+    
+    position: absolute;
+    width: 468px;
+    height: 480px;
+  
+    
+    
+    background: #FFFFFF;
+    box-shadow: 0px 8px 16px rgba(10, 10, 10, 0.1);
+    border-radius: 12px;
+}
+
+.frame_arriba{
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 1px 0px;
+
+position: static;
+height: 48px;
+left: 0%;
+right: 0%;
+top: 0px;
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+margin: 10px 0px;
+margin-bottom: 35px;
+}
+
+.izq{
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 11px 0px;
+
+position: static;
+height: 46px;
+left: 0%;
+right: 36.39%;
+top: calc(50% - 46px/2);
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 1;
+margin: 0px 0px;
+}
+
+
+.texto{
+position: static;
+width: 93px;
+height: 18px;
+left: calc(50% - 93px/2 - 44px);
+top: calc(50% - 18px/2);
+
+font-family: var(--fuenteCarruselA);
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 18px;
+/* identical to box height, or 112% */
+
+
+/* Text / Default */
+
+color: #3F474F;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 0px 14px;
+}
+
+.text_der{
+    
+position: static;
+width: 147px;
+height: 24px;
+left: calc(50% - 147px/2 + 128.5px);
+top: calc(50% - 24px/2);
+
+font-family: var(--fuenteCarruselA);
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+text-align: right;
+
+/* primary / normal */
+
+color: #1A75CF;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 0px 0px;
+}
+
+.separador{
+    margin-bottom: 5px;
+}
+
+.frame input:hover{
+    cursor: pointer;
+}
+
+.frame-checkbox input:hover{
+    cursor: pointer;
+}
+
+.frame{
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-start;
+padding: 0px;
+
+position: static;
+width: 404px;
+height: 46px;
+left: 0px;
+top: 0px;
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 15px 0px;
+}
+
+.formulario input[type="submit"]{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 11px 145px;
+    font-size: 15px;
+
+    position: static;
+    height: 46px;
+    left: 6.84%;
+    right: 6.84%;
+    top: 402px;
+    color: #1A75CF;
+    font-family: var(--fuenteCarruselA);
+
+    /* primary / normal */
+    background-color: white;
+    border: 2px solid #1A75CF;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+
+
+.formulario input[type="password"]{
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+  
+    padding: 10px 0;
+    width: 404px;
+    height: 0px;
+    left: 0px;
+    
+    box-sizing: border-box;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #A0A8BD;
+
+    
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 25px 0px;
+    
+}
+
+
+.formulario input[type="text"]{
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+  
+    padding: 10px 0;
+    width: 404px;
+    height: 0px;
+    left: 0px;
+    
+    box-sizing: border-box;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #A0A8BD;
+
+    
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 25px 0px;
+    
+}
+
+.frame ::placeholder{
+    position: static;
+    width: 100%;
+    height: 14px;
+    left: 294px;
+    top: 2.5px;
+    
+    font-family: var(--fuenteCarruselA);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+    
+    display: flex;
+    align-items: center;
+    text-align: right;
+    
+    /* Input/Placeholder */
+    
+    color: #A0A8BD;
+    
+    
+    /* Inside Auto Layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 7px;
+  
+}
+
+.frame-checkbox{
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+
+position: static;
+height: 48px;
+left: 6.84%;
+right: 6.84%;
+top: calc(50% - 48px/2 + 97px);
+
+border-radius: 4px;
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+margin: -5px 0px 30px;
+}
+
+.input-box{
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 5px 3px 3px;
+
+position: static;
+width: 12px;
+height: 12px;
+left: 0px;
+top: 0px;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 6px 8px 0px 5px;
+}
+
+.texto-box{
+position: static;
+height: 48px;
+left: 7.67%;
+right: 7%;
+top: calc(50% - 48px/2);
+width: 80%;
+max-width: 373px;
+font-family: var(--fuenteCarruselA);
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 24px;
+
+/* Text / Default */
+
+color: #3F474F;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 1;
+flex-grow: 1;
+margin: 0px 8px;
+}
+
+
+/* Focus */
+
+.contenedor .ruso:focus ~ label,
+.contenedor .ruso:valid ~ label{
+    margin-bottom: 0px;
+    margin-left: 1px;
+    top: -30px;
+    left: 0;
+    font-size: 12px;
+    font-family: var(--fuenteCarruselA);
+    
+}
+
+.contenedor .ruso:focus,
+.contenedor .ruso:valid{
+    border-bottom: 2px solid #1A75CF;
+}
+  
+.contenedor form .frame
+{
+    display: flex;
+    position: relative;
+}
+
+.contenedor form .frame label{
+    
+    position: absolute;
+    left: 0px;
+    top: -10px;
+    font-size: 16px;
+    pointer-events: none;
+    font-family: var(--fuenteCarruselA);
+    color: #999;
+    transition: .5s;
+
+}
+
+.principal{
+    display: flex;
+    flex-direction:  column;
+    align-items: center;
+    padding: 5px;
+    position: absolute;
+    height: 490px;
+    left: 15.83%;
+    right: 15.83%;
+    top: 156px;
+}
+
+/*Media Tablet*/
+@media(max-width: 768px) {
+    
+
+    .principal .contenedor{
+        width: 90%;
+    }
+
+    
+    form{
+        width: 100%;
+        right: 15%;
+        
+    }
+    .frame{
+        width: 100%;
+       
+    }
+
+    .frame .ruso{
+        width: 100% !important;
+        
+    }
+
+    .formulario input[type="submit"]{
+       padding: 0 33% !important;
+       
+    }
+   
+
+}
+
+@media(max-width: 480px) {
+    .head{
+        display: block;
+        display: none;
+        
+    }
+    
+    .principal{
+        top: -28px;
+        width: 100%;
+        left: 0;
+        
+    }
+
+    .principal .contenedor{
+        width: 100%;
+        box-shadow: none;
+        border-radius: none;
+        padding: 0;
+    }
+
+    .principal .contenedor .frame_arriba{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 4px 10px;
+
+
+        position: relative;
+        height: 60px;
+        left: 0%;
+        right: 0%;
+        top: 15px;
+
+        /* Background / White */
+
+        background: #FFFFFF;
+        /* Hover Shadow */
+
+        box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    form{
+        width: 90%;
+        right: 15%;
+        margin: auto;
+    }
+    .frame{
+        width: 100%;
+       
+    }
+
+    .frame .ruso{
+        width: 100% !important;
+        
+    }
+
+    .frame-checkbox {
+        margin: -5px 0px 40px !important;
+    }
+
+
+    .formulario input[type="submit"]{
+        width: 100%;
+        padding: 0px 33% !important;
+    
+    }
+
+
+
+}
+
