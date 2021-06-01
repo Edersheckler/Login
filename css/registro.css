@@ -40,6 +40,8 @@ height: 48px;
 left: 6.67%;
 right: 6.67%;
 top: 48px;
+max-width: 1200px;
+margin: auto;
     
 }  
 
@@ -164,6 +166,10 @@ margin: 0px 0px;
 
 .separador{
     margin-bottom: 5px;
+}
+
+.separador:hover{
+    cursor: pointer;
 }
 
 .frame input:hover{

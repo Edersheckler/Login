@@ -39,6 +39,8 @@ body{
     left: 6.67%;
     right: 6.67%;
     top: 48px;
+    margin: auto;
+    max-width: 1200px;
 }
 
 .principal{
