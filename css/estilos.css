@@ -77,12 +77,13 @@ align-items: center;
 padding: 12px;
 position: absolute;
 height: 402px;
-left: 15.83%;
-right: 15.83%;
-top: 156px;
+left: 1.83%;
+right: 1.83%;
+top: 120px;
 
 margin: auto;
 max-width: 984px;
+gap: 2rem;
 
 
 }
@@ -137,7 +138,9 @@ max-width: 984px;
     position: static;
 }
 
-
+.framedos:hover{
+    background:#9b9ea1cc;
+}
 .framedos{
 
 display: flex;
@@ -152,6 +155,9 @@ left: 0%;
 right: 0%;
 top: 0px;
 margin-bottom: 5px;
+
+
+transition: background-color .5s;
 
 /* Background / Input */
 
@@ -214,16 +220,19 @@ margin: 0px 0px;
 
 
 
-@media(max-width: 850px) {
+@media(max-width: 950px ) {
 
 
     .exterior{
-        width: 100%;
+        width: 60%;
+        margin: 0;
+        left: 0;
     }
-
+    /*
     .owl-demo .item img{
         width: 100% !important;
       }
+    */
     .item{ 
         width: 100%;
     }
@@ -237,18 +246,26 @@ margin: 0px 0px;
     .owl-theme .owl-nav{
         top:16rem;
        left: -3rem !important;
-       width: 100% !important;
+       width: 110% !important;
     }
 
     
     .contenedordos{
-        padding: 0px 30px !important;
+        padding: 0px 4px !important;
+        left: 0;
+        right: 0;
+    }
+
+    .contenedordos .framedos{
+        width: 105%;
     }
     
     .contenedordos .contenedordos_ops{
         flex: none !important;
         order: none !important;
-        width: 60% !important;
+        width: 33% !important;
+        margin-left: 0 ;
+        margin: 0px 0px 0px 0px;
         
     }
     .contenedordos .contenedordos_carrusel{
@@ -263,7 +280,7 @@ margin: 0px 0px;
 
     }
     .contenedordos .contenedordos_ops .texto-OP{
-        width: 100% !important;
+        width: 95% !important;
         margin-bottom: 35px;
     }
 
@@ -273,7 +290,7 @@ margin: 0px 0px;
 
 }
 
-@media(max-width: 500px) {
+@media(max-width: 768px) {
 
     .exterior{
         display: block;
@@ -284,7 +301,7 @@ margin: 0px 0px;
         display: flex;
         flex-direction: column-reverse;
         gap: 4rem;
-        margin-top: 50px;
+        margin-top: 65px;
         max-width: 1224px;
         padding: 46px 32px 38px;
     }  
@@ -349,12 +366,6 @@ margin: 0px 0px;
 }
 
 
-
-
-
-
-
-
 /*  termina el calis    */
 
 .head{
@@ -378,159 +389,10 @@ margin: 0px 0px;
 
     }   
 
-    @media(max-width: 0px) {
-        .head{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0px;
-        
-            }
-            .contenedor .logprincipal{
-                display: flex;
-                flex-direction: column-reverse;
-                column-gap: 10rem;
-                align-items: center;
-                           
-            }
-
-            .logprincipal__carrusel{
-                width: 497px !important;
-                height: 200px !important;
-                margin-top: 20rem !important;
-                margin-left: 3rem !important;
-
-            }
-
-
-
-       
-
-    }
-
-    @media(max-width: 0px) {
-        
-        .head{
-            display: flex;
-            flex-direction: column-reverse;
-            gap: 44px;
-            margin-top: 12rem;
-            align-items: center;
-            margin-left: 30rem;
-            position: static;
-                   
-        }  
-
-
-        .contenedor .logprincipal{
-            display: flex;
-            flex-direction: column-reverse;
-
-
-        }
-       
-
-        .logprincipal__carrusel{
-            visibility: hidden;
-        }
-
-        .logprincipal__ops{
-            margin-top: -46px !important;
-            box-shadow:none !important;
-            border-radius: none !important;
-            position: static !important;
-         
-            align-items: flex-start !important;
-
-        }
-
-        .logprincipal__ops .frame{
-            left: 20% !important;
-            right: 20% !important;
-            
-        }
-
-        
-        
-        
-    }
-
 /* seleccion */
 
 
-.opciones
-/* Carrusel */
 
-.owl-demo .item{
-    margin: 3px; 
-  }
-.owl-demo .item img{
-    position: relative;
-    width: 320px;
-    height: 227px;  
-  }
-
-
-
-
-.logprincipal{
-    margin: auto ;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    column-gap: 4rem;
-    margin-top: 5rem;    
-}
-
-.logprincipal__carrusel{
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 50px;
-
-position: relative;
-width: 497px;
-height: 378px;
-left: 12px;
-top: 12px;
-
-
-/* Inside Auto Layout */
-
-flex: none;
-order: 0;
-flex-grow: 0;
-margin: 40px 10px;
-
-}
-
-.logprincipal__ops{
-
-  
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 23px 32px 38px;
-    box-sizing: border-box;
-    
-    position: static;
-    height: 280px;
-    left: 61.28%;
-    right: 1.22%;
-    top: 12px;
-    width: 370px;
-    
-    background: #FFFFFF;
-    box-shadow: 0px 8px 16px rgba(10, 10, 10, 0.1);
-    border-radius: 12px;
-    
-    /* Inside Auto Layout */
-    
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    margin: 10px 24px;
-}
 
 
 .titulo{
@@ -614,61 +476,8 @@ flex-grow: 0;
 margin: 24px 0px;
 }
 
-.frame{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 11px 20px;
-    
-    
-    position: static;
-    height: 46px;
-    left: 0%;
-    right: 0%;
-    top: 0px;
-    width: 100%;
-    
-    /* Background / Input */
-    
-    background: #F8F9FA;
-    border-radius: 5px;
-    
-    /* Inside Auto Layout */
-    
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 3px 0px;
-}
 
-.centrado{
-position: static;
-width: 229px;
-height: 24px;
-left: calc(50% - 229px/2);
-top: calc(50% - 24px/2);
-
-font-family: var(--fuenteCarruselA);
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 24px;
-/* identical to box height, or 150% */
-text-align: center;
-
-
-/* Text / Default */
-
-color: #3F474F;
-
-
-/* Inside Auto Layout */
-
-flex: none;
-order: 1;
-flex-grow: 1;
-margin: -1px 0px;
-}
+/* Owl carrusel settings */
 
 
 .owl-carousel .owl-theme .owl-dots, .owl-theme .owl-nav {
@@ -677,7 +486,27 @@ margin: -1px 0px;
 }
 
 
-.owl-theme .owl-dots{text-align:left;-webkit-tap-highlight-color:transparent}
+.owl-theme .owl-dots{
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 7px;
+
+position: static;
+height: 22px;
+left: 0%;
+right: 72.24%;
+top: 356px;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 0px 0px;
+    
+}
 
 .owl-nav {
     position: absolute;
@@ -737,3 +566,15 @@ margin: -1px 0px;
     left: -3.5rem;
     width: 105%;
 }
+
+
+/* Carrusel div content */
+
+.owl-demo .item{
+    margin: 3px; 
+  }
+.owl-demo .item img{
+    position: relative;
+    width: 320px;
+    height: 227px;  
+  }

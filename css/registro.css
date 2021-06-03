@@ -165,17 +165,25 @@ margin: 0px 0px;
 }
 
 .separador{
-    margin-bottom: 5px;
+    margin-bottom: 2px;
 }
 
 .separador:hover{
     cursor: pointer;
 }
 
-.frame input:hover{
-    cursor: pointer;
+.formulario input[type="text"]:hover{
+    border-bottom: 2px solid black;
 }
 
+.formulario input[type="password"]:hover{
+    border-bottom: 2px solid black;
+}
+/*
+.frame input:hover{
+    cursor: pointer;   
+}
+*/
 .frame-checkbox input:hover{
     cursor: pointer;
 }
@@ -243,6 +251,7 @@ margin: 15px 0px;
     width: 404px;
     height: 0px;
     left: 0px;
+    transition: border-bottom 0s;
     
     box-sizing: border-box;
     box-shadow: none;
@@ -271,6 +280,7 @@ margin: 15px 0px;
     width: 404px;
     height: 0px;
     left: 0px;
+    transition: border-bottom 0s;
     
     box-sizing: border-box;
     box-shadow: none;
@@ -472,7 +482,7 @@ margin: 0px 8px;
 
 }
 
-@media(max-width: 480px) {
+@media(max-width: 550px) {
     .head{
         display: block;
         display: none;
