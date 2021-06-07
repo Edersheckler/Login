@@ -38,10 +38,7 @@ body{
     height: 402px;
     left: 15.83%;
     right: 15.83%;
-    top: 156px;
-   
-    
-    
+    top: 156px;    
 }
 
 .exterior{
@@ -84,8 +81,6 @@ top: 120px;
 margin: auto;
 max-width: 984px;
 gap: 2rem;
-
-
 }
 
 
@@ -99,9 +94,9 @@ gap: 2rem;
     width: 425px;
     height: 378px;
     left: 36px;
-    top: 0px;
-   
+    top: 0px; 
 }
+
 .contenedordos_ops{
    
     display: flex;
@@ -127,8 +122,6 @@ gap: 2rem;
     order: 1;
     flex-grow: 0;
     margin: 0px 24px;
-
-
 }
 
 .cal{
@@ -141,8 +134,8 @@ gap: 2rem;
 .framedos:hover{
     background:#9b9ea1cc;
 }
-.framedos{
 
+.framedos{
 display: flex;
 flex-direction: row;
 align-items: flex-start;
@@ -203,7 +196,7 @@ margin: 0px 0px 0px -22px;
 }
 
 .google{
-    position: static;
+position: static;
 width: 21px;
 height: 21px;
 left: 17px;
@@ -283,12 +276,8 @@ margin: 0px 0px;
         width: 95% !important;
         margin-bottom: 35px;
     }
-
-   
-   
-
-
 }
+
 
 @media(max-width: 768px) {
 
@@ -365,9 +354,6 @@ margin: 0px 0px;
     
 }
 
-
-/*  termina el calis    */
-
 .head{
    
     display: flex;
@@ -385,15 +371,7 @@ margin: 0px 0px;
     max-width: 1200px;
     margin: auto;
     
-
-
-    }   
-
-/* seleccion */
-
-
-
-
+}   
 
 .titulo{
     position: static;
@@ -407,11 +385,9 @@ margin: 0px 0px;
     font-weight: normal;
     font-size: 36px;
     line-height: 40px;
-    /* or 112% */
-    
+    /* Color titulo  */
     
     color: #363F4D;
-    
     
     /* Inside Auto Layout */
     
